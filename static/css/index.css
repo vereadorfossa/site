@@ -1,0 +1,36 @@
+
+body {
+    background-image: url("../media/background.jpg");
+}
+.sectionImage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    height: 100%;
+}
+.vertical {
+    display: none;
+}
+
+@media (max-width: 1160px) {
+    .image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .image {
+        display: none;
+    }
+    .vertical {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
